@@ -18,7 +18,6 @@ public class StringConcatenation {
         //TODO: 내년에 몇살이 되는지 출력합니다.
         // message나 별도의 변수 선언을 하지 않습니다.
         System.out.println("내년에는 "+(age+1)+"살이 되는군요.\n");
-        
         scanner.close();
     }
 }
