@@ -9,7 +9,7 @@ public class FormattedOutput {
         System.out.print("정수를 입력하세요: ");
         // TODO: 정수를 입력 받습니다.
         int a = scanner.nextInt();
-        System.out.printf("%10d",10);
+        System.out.printf("입력된 숫자는: [%10d]",a);
         // TODO: 요구 조건에 맞도록 출력합니다. 10자리, 오른쪽 정렬
         scanner.close();
     }
