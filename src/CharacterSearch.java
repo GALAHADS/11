@@ -1,24 +1,50 @@
-import java.util.Scanner;
+import textio.TextIO;
 
 public class CharacterSearch {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("문자열을 입력하세요: ");
-        String a = scanner.nextLine();
-        // TODO: 문자열 한줄을 입력 받습니다.
-        System.out.print("검색할 문자를 입력하세요: ");
-        // TODO: 검색할 문자를 입력 받습니다.
-        String target = scanner.next();
-        int position = a.indexOf(target); 
-        // TODO: 문자열에서 주어진 문자를 찾습니다.
-
-        if (position != -1) {
-            System.out.println("문자 '" + target + "'의 위치: " + position);
-        } else {
-            System.out.println("문자 '" + target + "'는 문자열에 없습니다.");
-        }
-
-        scanner.close();
-    }
+   
+        double firstNum;    // First number in the expression.
+        double secondNum;   // Second number in the expression.
+        char operator;      // The operator in the expression.
+        double value;       // The value of the expression.
+        
+        System.out.println("Enter expressions such as  2 + 2  or  34.2 * 7.81");
+        System.out.println("using any of the operators +, -, *, /.");
+        System.out.println("To end, enter a 0.");
+        System.out.println();
+        
+        while (true) {
+            
+            /* Get user's input, ending program if first number is 0. */
+        
+            System.out.print("? ");
+            firstNum = TextIO.getDouble();
+            if (firstNum == 0)
+               break;
+            operator = TextIO.getChar();
+            secondNum = TextIO.getlnDouble();
+            
+            /* Compute the value of the expression. */
+            
+            switch (operator) {
+                case '+' -> value = firstNum + secondNum;
+                case '-' -> value = firstNum - secondNum;
+                case '*' -> value = firstNum * secondNum;
+                case '/' -> value = firstNum / secondNum;
+                default -> {
+                   System.out.println("Unknown operator: " + operator);
+                   continue;  // Back to start of loop!
+                }
+            } // end switch
+            
+            /* Display the value. */
+            
+            System.out.println("Value is " + value);
+            System.out.println();
+                      
+        } // end while
+        
+        System.out.println("Good bye");
+     
+     }  // end main()
 }

@@ -1,11 +1,10 @@
-import java.util.Scanner;
 import textio.TextIO;
 
 public class n371 {
     public static void main(String[] args) {
         System.out.print("나이를 입력하세요: ");
         int age= TextIO.getlnInt();
-P
+
         try {
             if(age < 0)
             throw new IllegalArgumentException(age+"는 나이가 아니다다");

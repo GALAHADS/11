@@ -3,5 +3,9 @@
         "src"
     ],
     "java.project.outputPath": "bin",
-    "java.project.referencedLibraries": []
+    "java.project.referencedLibraries": [
+        "c:\\Users\\kkh59\\Downloads\\openjfx-23.0.2_windows-x64_bin-sdk\\javafx-sdk-23.0.2\\lib\\javafx.base.jar",
+        "c:\\Users\\kkh59\\Downloads\\openjfx-23.0.2_windows-x64_bin-sdk\\javafx-sdk-23.0.2\\lib\\javafx.graphics.jar",
+        "c:\\Users\\kkh59\\Downloads\\openjfx-23.0.2_windows-x64_bin-sdk\\javafx-sdk-23.0.2\\lib\\javafx-swt.jar"
+    ]
 }
